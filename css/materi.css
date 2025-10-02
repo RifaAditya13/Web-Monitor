@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content{
+    margin-top: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000436;
+  padding: 15px 30px;
+}
+
+.navbar .logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* selalu 2 kolom */
+  gap: 20px; /* jarak antar card */
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
